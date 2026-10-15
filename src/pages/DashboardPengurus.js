@@ -29,13 +29,6 @@ export default function DashboardPengurus() {
             <div className="stat-value">{data?.total_anggota ?? '—'}</div>
           </div>
         </div>
-        <div className="stat-card orange">
-          <div className="stat-icon"><FileText size={24} /></div>
-          <div className="stat-info">
-            <div className="stat-label">Pengajuan Baru</div>
-            <div className="stat-value">{data?.pengajuan_baru ?? '—'}</div>
-          </div>
-        </div>
         <div className="stat-card red">
           <div className="stat-icon"><CreditCard size={24} /></div>
           <div className="stat-info">

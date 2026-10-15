@@ -98,8 +98,9 @@ router.post('/', verifyToken, requirePengurus, async (req, res) => {
       `INSERT INTO anggota (nomor_anggota, nama_lengkap, nik, tempat_lahir, tanggal_lahir,
        jenis_kelamin, alamat, no_telepon, email, unit_kerja, jabatan, tanggal_bergabung, status)
        VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,'aktif') RETURNING id`,
-      [nomorFinal, nama_lengkap, nik, tempat_lahir, tanggal_lahir,
-       jenis_kelamin, alamat, no_telepon, email, unit_kerja, jabatan,
+      [nomorFinal, nama_lengkap, nik || null, tempat_lahir || null,
+       tanggal_lahir || null, jenis_kelamin || null, alamat || null,
+       no_telepon || null, email || null, unit_kerja || null, jabatan || null,
        tanggal_bergabung || new Date().toISOString().split('T')[0]]
     );
 

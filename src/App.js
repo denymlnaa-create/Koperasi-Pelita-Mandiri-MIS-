@@ -26,7 +26,6 @@ import Pembayaran from './pages/pembayaran/Pembayaran';
 import CatatPembayaran from './pages/pembayaran/CatatPembayaran';
 
 import Laporan from './pages/laporan/Laporan';
-import DaftarPendaftaran from './pages/pendaftaran/DaftarPendaftaran';
 
 function AppRoutes() {
   return (
@@ -91,11 +90,6 @@ function AppRoutes() {
       {/* Laporan */}
       <Route path="/laporan" element={
         <ProtectedRoute role="pengurus"><Layout><Laporan /></Layout></ProtectedRoute>
-      } />
-
-      {/* Pendaftaran */}
-      <Route path="/pendaftaran" element={
-        <ProtectedRoute role="pengurus"><Layout><DaftarPendaftaran /></Layout></ProtectedRoute>
       } />
 
       {/* Fallback */}

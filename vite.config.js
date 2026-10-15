@@ -17,6 +17,7 @@ export default defineConfig({
     exclude: [],
   },
   server: {
+    host: true, // expose ke network lokal
     proxy: {
       '/api': {
         target: 'http://localhost:5000',

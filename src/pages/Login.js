@@ -79,10 +79,6 @@ export default function Login() {
         <p className="login-footer">
           Hubungi pengurus jika mengalami masalah login.
         </p>
-        <p className="login-footer" style={{ marginTop: 8 }}>
-          Belum punya akun?{' '}
-          <a href="/daftar" style={{ color: '#2563eb', fontWeight: 500 }}>Daftar di sini</a>
-        </p>
       </div>
     </div>
   );

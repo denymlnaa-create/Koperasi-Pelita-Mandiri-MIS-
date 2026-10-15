@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import {
   LayoutDashboard, Users, PiggyBank, FileText,
-  CreditCard, BarChart3, LogOut, Menu, X, Building2, UserPlus
+  CreditCard, BarChart3, LogOut, Menu, X, Building2
 } from 'lucide-react';
 
 const menuAnggota = [
@@ -16,7 +16,6 @@ const menuAnggota = [
 
 const menuPengurus = [
   { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/pendaftaran', icon: UserPlus, label: 'Pendaftaran' },
   { to: '/anggota', icon: Users, label: 'Anggota' },
   { to: '/simpanan', icon: PiggyBank, label: 'Simpanan' },
   { to: '/pengajuan', icon: FileText, label: 'Pengajuan' },
